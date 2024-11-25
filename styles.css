@@ -1,0 +1,184 @@
+
+
+body {
+  font-family: 'Open Sans', sans-serif; /* Changed font for a cleaner look */
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* 
+  Navigation Bar 
+*/
+
+#navbar {
+  background-color: #fff; /* Changed to white for a clean look */
+  padding: 1rem 2rem;
+  display: flex;
+   /* Use flexbox for better layout control */
+  justify-content: space-between; /* Space elements evenly */
+  align-items: center;
+}
+
+
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+}
+
+#navbar li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 15px; /* Add padding for the rectangular shape */
+  border-radius: 5rem;
+}
+#navbar ul a:hover {
+  background-color: #007bff;
+  color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  transform: translateY(-2px); /* Slight lift on hover */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+
+/* 
+  Hero Section 
+*/
+
+#hero {
+    background-image: url('hero.jpg'); 
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 5rem 0; 
+    color: white;
+    position: relative;
+}
+
+
+.hero-content {
+  position: relative; /* Added for hero image positioning */
+  z-index: 2; /* Ensures content shows on top of image */
+}
+
+
+/* 
+  Property Listings 
+*/
+
+.toggle-more {
+    display: inline-block; /* Make it appear like a button */
+    padding: 10px 20px;   /* Add some padding */
+    background-color: #007bff; /* Set a background color */
+    color: white;           /* Set text color to white */
+    border: none;           /* Remove default border */
+    cursor: pointer;        /* Change cursor to a pointer hand */
+    text-decoration: none;  /* Remove any underlines */
+    border-radius: 5px;     /* Add rounded corners (optional) */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+  }
+  
+  .toggle-more:hover {
+    background-color: #0056b3; /* Darken the background on hover */
+  }
+
+#properties {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.property-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.property {
+    border: 1px solid #ddd;
+    margin: 1rem;
+    padding: 1rem;
+    width: 300px; /* Adjust as needed */
+    text-align: left;
+}
+
+.more-details {
+    display: none; /* Initially hide the details */
+    margin-top: 10px; /* Add some spacing */
+  }
+
+  .more-details.show {
+    display: block; /* Show when the "MORE" is clicked */
+  }
+
+/* 
+  Contact Form 
+*/
+
+#contact {
+    padding: 50px 0; /* Add some top/bottom padding to the section */
+    text-align: center; /* Center the form content */
+  }
+  
+  #contact-form {
+    width: 50%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 30px;
+    border: 1px solid #a9a9a9; /* Add a subtle border */
+    border-radius: 8px; /* Add rounded corners */
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    width: calc(100% - 22px); /* Full width minus padding/border */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid ;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  #contact-form textarea {
+    height: 120px; /* Adjust height as needed */
+    resize: vertical; /* Allow vertical resizing only */
+  }
+  
+  #contact-form button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #007bff; /* Example button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  #contact-form button[type="submit"]:hover {
+    background-color: #0056b3; /* Darken color on hover */
+  }
+
+
+.about{
+  align-content: center;
+}
+
+/* 
+  Footer 
+*/
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
