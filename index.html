@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROPMART - Visit, Choose & Select</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a id="logo" href="#">PROPMART</a>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+                <li><a href="#properties">PROPERTIES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Find Your Dream Home</h1>
+                <p>Browse our curated selection of properties</p>
+                <button class="toggle-more">Get Started</button>
+            </div>
+        </section>
+
+        <section id="properties">
+            <h2>Available Properties</h2>
+            <div class="property-list">
+                <div class="property">
+                    <h3>Modern Family Home</h3>
+                    <p>Price: Rs.350,000</p>
+                    <p>Location: Near Guru Dev Reaestate Developer , Greater Noida</p>
+                </div>
+                <div class="property">
+                    <h3>Luxury apartment</h3>
+                    <p>Price: RS.450,000</p>
+                    <p>Location: FF-33 and 34 , 1st Floor, SNG plaza, Block B , Ansal Golf Link-1, Greater Noida, Uttar
+                        Pradesh 201310</p>
+                    <h4 class="toggle-more"> More Details </h4>
+                    <P class="more-details">SQUARE METERS Realtors Pvt. Ltd. We are leading real estate agent & property
+                        dealer in the
+                        region of Noida, Greater Noida & Yamuna Expressway.
+                        Under the leadership of our three Directors Mr. Shiv Kumar Gupta, Mr. Pradeep Singh and Mr.
+                        Gaurav Goyal, we have emerged as a leading real estate agent on Yamuna Expressway and
+                        Greater Noida region.
+                        We are registered with UP RERA under registration number (UPRERAAGT20000)</P>
+                    </h4>
+                </div>
+                <div class="property">
+                    <h3> Shri Vinayak Apartment</h3>
+                    <p>Price: Rs.250,000</p>
+                    <p>Location: Countryside</p>
+                    <h4 class="toggle-more"> More Details </h4>
+                    <p class="more-details"> SVG offers premium retail shops across Noida & Greater Noida .</p>
+                    </h4>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" style="text-align: center;">
+            <h2>About Us</h2>
+            <p>More about your company...</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AS PROPMART</p>
+    </footer>
+</body>
+
+<!-- <script>
+    // JavaScript to toggle the "MORE" details
+    const toggleMoreElements = document.querySelectorAll('.toggle-more');
+
+    toggleMoreElements.forEach(element => {
+        element.addEventListener('click', () => {
+            const moreDetails = element.nextElementSibling;
+            moreDetails.classList.toggle('show');
+        });
+    });
+</script> -->
+
+</html>
